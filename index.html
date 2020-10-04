@@ -27,12 +27,22 @@
         }
         .display-4{
             text-align: center;
+            color:white;
         }
         .lead{
             text-align: center;
+            color: white;
+            border-color: white;
         }
-        .btn btn-primary btn-lg{
-            align-content: center;
+        .btn-primary{
+            background-color: #3D085C;
+            border-color: #3D085C;
+        }
+        .bg-cover {
+                background-attachment: static;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
         }
         } 
     </style>
@@ -65,10 +75,12 @@
 </nav>
     </header>
 <body>
-    <div class="jumbotron">
+    <div class="jumbotron bg-cover text-white" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%) , url(qualitadtuvois.jpg); height: 100vh;">
         <h1 class="display-4">Kicks & Frips</h1>
   <p class="lead">Achat de sneakers et de vêtements neufs et de seconde main</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="text-center">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Page Vinted</a>
+    </div>
 </div>
 
 </body>
