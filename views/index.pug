@@ -1,20 +1,19 @@
 extends layout
 block content
-    body (class="text-center")
-        div(class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column")
-            header class="masthead mb-auto"
-                div class="inner"
-                    a class="masthead-brand" href="index.html"img src="Kicks%20&%20Frips.png" width=250 height=50
-                    nav class="nav nav-masthead justify-content-center"
-                        a class="nav-link active" href="index.html"Accueil
-                        a class="nav-link" href="produit.html"Produits
-                        a class="nav-link" href="reseaux.html"Réseaux
-            main role="main" class="inner cover"
-                h1 class="cover-heading"Kicks And Fripsh1
-                p class="lead"Achat de sneakers et de vêtements neufs et de seconde mainp
-                p class="lead"
-                    a href="https:www.vinted.frmember41582734-kicksandfrips" class="btn btn-lg btn-secondary"Page Vinted
-            footer class="mastfooot mt-auto"
-                div class="inner" style="color: white;"
-                pKicks And Fripsp
-                div
+    body.text-center
+        div.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+            header.masthead.mb-auto
+                div.inner
+                    a.masthead-brand(href="/")
+                        img(src="/images/Kicks_&_Frips.png" width=250 height=50)
+                    nav.nav.nav-masthead.justify-content-center
+                        a.nav-link(href="/") Accueil
+                        a.nav-link(href="produit.html") Produits
+                        a.nav-link(href="reseaux.html") Réseaux
+            main.inner.cover(role="main")
+                h1.cover-heading Kicks And Fripsh1
+                p.lead Achat de sneakers et de vêtements neufs et de seconde mainp
+                p.lead
+                    a.btn.btn-lg.btn-secondary(href="https:www.vinted.frmember41582734-kicksandfrips") Page Vinted
+            footer.mastfooot.mt-auto
+                div.inner(style="color: white;") pKicks And Fripsp
