@@ -69,16 +69,20 @@ body {
 }
 
 @media (min-width: 48em) {
+  
   .masthead-brand {
     float: left;
   }
+
   .nav-masthead {
     float: right;
   }
 }
+
 .cover {
   padding: 0 1.5rem;
 }
+
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
@@ -87,21 +91,25 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
 .inner{
-    color= white;
+    color: white;
 }
+
 .btn-group {
   margin: 35px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 .card
 {
     justify-content: center;
     background-color: #B4B4B4;
     width: 18rem;
 }
+
 .container
 {
     justify-content: center;
