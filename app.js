@@ -5,8 +5,6 @@ var session = require('express-session');
 var cookieParser = require('cookie-parser');
 
 var logger = require('morgan');
-
-//
 var stylus = require('stylus');
 
 //var fileUpload = require('express-fileupload');
@@ -30,7 +28,6 @@ app.use(session({
 }));
 app.use(stylus.middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
-//app.use('/raw', express.static(path.join(__dirname, 'raw')));
 
 app.use(function(req,res,next){
     res.locals.session = req.session;
