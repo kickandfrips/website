@@ -1,59 +1,34 @@
 extend layout
 block content
-    body.text-center
-        div(class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column")
-            header(class="masthead mb-auto")
-                div(class="inner")
-                    a(class="masthead-brand" href="index.html" src="Kicks_&_Frips.png" width=250 height=50)
-                    nav(class="nav nav-masthead justify-content-center")
-                        a(class="nav-link" href="index.html"Accueil)
-                        a(class="nav-link active" href="produit.html"Produits)
-                        a(class="nav-link" href="reseaux.html"Réseaux)
-            main(role="main"class="inner cover")
-                div(class="container")
-                    div(class="row")
-                        div(class="col-sm-6")
-                            div(class="card")
-                                img(class="card-img-top" src="airjordan1.jpg" alt="Card image cap")
-                                div(class="card-body")
-                                    h5(class="card-title"Air Jordan)
-                                    p(class="card-text")
-                                        Blah blah jmy connais pas en sneakers jsuis que le dev moi ptn... PAYEZ MOI !!!
-                                    div(class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups") 
-                                        div(class="btn-group mr-2 " role="group" aria-label="First group" style="margin-bottom: 10px;")
-                                            button(type="button" class="btn btn-primary disabled" 40)
-                                            button(type="button" class="btn btn-primary disabled"41)
-                                            button(type="button" class="btn btn-primary disabled"42)
-                                            button(type="button" class="btn btn-primary disabled"43)
-                                        div
-                                    div
-                                    a(href="#" class="btn btn-primary"Cela mène nulle part)
-                                div
-                            div
-                        div(class="col-sm-6")
-                            div(class="card" style="width: 18rem; ")
-                                img(class="card-img-top" src="airjordan1.jpg" alt="Card image cap")
-                                div(class="card-body" style="background-color: #B4B4B4;")
-                                    h5(class="card-title"Air Jordan)
-                                    p(class="card-text"Blah blah jmy connais pas en sneakers jsuis que le dev moi ptn... PAYEZ MOI !!!)
-                                        div(class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" )
-                                        div(class="btn-group mr-2 " role="group" aria-label="First group" style="margin-bottom: 10px;")
-                                            button(type="button" class="btn btn-primary disabled" 40)
-                                            button(type="button" class="btn btn-primary disabled"41)
-                                            button(type="button" class="btn btn-primary disabled"42)
-                                            button(type="button" class="btn btn-primary disabled"43)
-                                        div
-                                        div
-                                    a(href="#" class="btn btn-primary"Cela mène nulle part)
-                                div
-                            div
-                        div
-                div
-            main
-            
-            footer(class="mastfooot mt-auto")
-                div(class="inner" style="color: white;")
-                    p(Kicks And Frips)
-        div
-    body
-    html
+        main.innver.cover(role="main")
+                div.container
+                    div.row
+                        div.col-sm-6
+                            div.card
+                                img.card-img-top(src="airjordan1.jpg" alt="Card image cap")
+                                div.card-body
+                                    h5.card-title Air Jordan
+                                    p.card-text Blah blah jmy connais pas en sneakers jsuis que le dev moi ptn... PAYEZ MOI !!!
+                                    div.btn-toolbar(role="toolbar" aria-label="Toolbar with button groups") 
+                                        div.btn-group.mr-2(role="group" aria-label="First group" style="margin-bottom: 10px;")
+                                            button.btn.btn-primary(type="button") 40
+                                            button.btn.btn-primary(type="button") 41
+                                            button.btn.btn-primary(type="button") 42
+                                            button.btn.btn-primary(type="button") 43
+                                            a.btn.btn-primary(href="#") Cela mène nulle part
+                        div.col-sm-6
+                            div.card(style="width: 18rem; ")
+                                img.card-img-top(src="airjordan1.jpg" alt="Card image cap")
+                                div.card-body(style="background-color: #B4B4B4;")
+                                    h5.card-title Air Jordan
+                                    p.card-text Blah blah jmy connais pas en sneakers jsuis que le dev moi ptn... PAYEZ MOI !!!
+                                    div.btn-toolbar(role="toolbar" aria-label="Toolbar with button groups")
+                                        div.btn-group.mr-2(role="group" aria-label="First group" style="margin-bottom: 10px;")
+                                            button.btn.btn-primary(type="button") 40
+                                            button.btn.btn-primary(type="button") 41
+                                            button.btn.btn-primary(type="button") 42
+                                            button.btn.btn-primary(type="button") 43
+                                            a.btn.btn-primary(href="#") Cela mène nulle part       
+        footer.mastfooot.mt-auto
+                div.inner(style="color: white;")
+                    p Kicks And Frips
