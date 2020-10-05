@@ -8,7 +8,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #a30c3e;
+  color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #ffff;
   border: .05rem solid #a30c3e;
@@ -89,4 +89,18 @@ body {
 }
 .inner{
     color= white;
+}
+.btn-group {
+  margin: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card
+{
+    justify-content: center;
+}
+.container
+{
+    justify-content: center;
 }
