@@ -1,7 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-//
+var session = require('express-session');
 var cookieParser = require('cookie-parser');
 
 var logger = require('morgan');
@@ -36,13 +36,13 @@ app.use(function(req,res,next){
     res.locals.session = req.session;
     next();
 });
-
+/*
 app.use(fileUpload({
   createParentPath: true,
   useTempFiles: true,
   tempFileDir: path.join(__dirname, 'temp')
 }));
-
+*/
 
 app.use('/', indexRouter);
 
