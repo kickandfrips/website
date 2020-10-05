@@ -99,6 +99,8 @@ body {
 .card
 {
     justify-content: center;
+    background-color: #B4B4B4;
+    width: 18rem;
 }
 .container
 {
