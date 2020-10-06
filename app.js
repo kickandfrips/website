@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
+var mysql = require('mysql');
 
 var logger = require('morgan');
 var stylus = require('stylus');
@@ -11,6 +12,24 @@ var stylus = require('stylus');
 
 var indexRouter = require('./routes/index');
 //var produitRouter = require('./routes/produit');
+
+/* Connect to bdd */
+console.log('Get connection ...');
+ 
+var conn = mysql.createConnection({
+  database: 'mytestdb',
+  host: "localhost",
+  user: "root",
+  password: "bonjour"
+});
+ 
+conn.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+
+
+
 
 var app = express();
 
