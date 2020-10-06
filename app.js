@@ -20,7 +20,7 @@ var conn = mysql.createConnection({
   database: 'kickswebsite',
   host: "localhost",
   user: "root",
-  password: "bonjour"
+  password: "Bonjour"
 });
  
 conn.connect(function(err) {

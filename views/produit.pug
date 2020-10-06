@@ -1,5 +1,7 @@
 extend layout
 block content
+	each obj in result
+		input(type="hidden" value="{{obj.img}}")
 	body.text-center
 		div.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
 			header.masthead.mb-auto
