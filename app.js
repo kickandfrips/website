@@ -17,7 +17,7 @@ var indexRouter = require('./routes/index');
 console.log('Get connection ...');
  
 var conn = mysql.createConnection({
-  database: 'mytestdb',
+  database: 'kickswebsite',
   host: "localhost",
   user: "root",
   password: "bonjour"
@@ -27,8 +27,6 @@ conn.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
 });
-
-
 
 
 var app = express();

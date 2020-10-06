@@ -14,29 +14,74 @@ CREATE TABLE `user` (
 );
 
 
+
+CREATE TABLE `shoes` (
+    `id` int NOT NULL,
+	`img` varchar NOT NULL,
+    `name` varchar NOT NULL,
+    `genre` enum('H','F'),
+    `marque` varchar NOT NULL
+    );
+
+
+CREATE TABLE 'size'
+(
+	id int NOT NULL,
+	size int NOT NULL
+);
+
+
+CREATE TABLE 'size_shoes'
+(
+	id int not null,
+	idshoes int not null,
+	idsize int not null,
+	idcolor1 int not null,
+	idcolor2 int not null,
+	quantity int not null
+);
+
+
+CREATE TABLE 'color'
+(
+	id int not null,
+	name varchar not null
+);
+
+ALTER TABLE `color`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `color`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `size`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `size`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+
+
+ALTER TABLE `size_shoes`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `size_shoes`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+
+
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
-
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
 
 
 
-CREATE TABLE `shoes` (
-    `id` int(13) NOT NULL,
-    `modele` varchar(50) NOT NULL,
-    `taille` int(2) NOT NULL,
-    `genre` varchar(5) NOT NULL,
-    `marque` varchar(15) NOT NULL,
-    `couleur1` varchar(15) NOT NULL,
-    `couleur2` varchar(15) NOT NULL,
-    `quantité` varchar(4) NOT NULL
-    );
 ALTER TABLE `shoes`
     ADD PRIMARY KEY (`id`);
+
 ALTER TABLE `shoes`
 	MODIFY `id` int(13) NOT NULL AUTO_INCREMENT;
-COMMIT;
-    
+
