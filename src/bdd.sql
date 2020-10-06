@@ -21,3 +21,22 @@ ALTER TABLE `user`
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
+
+
+
+CREATE TABLE `shoes` (
+    `id` int(13) NOT NULL,
+    `modele` varchar(50) NOT NULL,
+    `taille` int(2) NOT NULL,
+    `genre` varchar(5) NOT NULL,
+    `marque` varchar(15) NOT NULL,
+    `couleur1` varchar(15) NOT NULL,
+    `couleur2` varchar(15) NOT NULL,
+    `quantité` varchar(4) NOT NULL
+    );
+ALTER TABLE `shoes`
+    ADD PRIMARY KEY (`id`);
+ALTER TABLE `shoes`
+	MODIFY `id` int(13) NOT NULL AUTO_INCREMENT;
+COMMIT;
+    
