@@ -7,6 +7,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/produit', function (req, res, next) {
+	var req = "SELECT * FROM size_shoes, shoes, color, size	WHERE size_shoes.idshoes = shoes.id AND	size_shoes.idsize = size.id AND	size_shoes.idcolor1 = color.id AND	size_shoes.idcolor2 = color.id AND quantity > 0";
 	res.render('produit', {});
 });
 

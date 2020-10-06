@@ -85,3 +85,4 @@ ALTER TABLE `shoes`
 ALTER TABLE `shoes`
 	MODIFY `id` int(13) NOT NULL AUTO_INCREMENT;
 
+ALTER TABLE `kickswebsite`.`size_shoes` DROP INDEX `unique_shoes`, ADD UNIQUE `unique_shoes` (`idshoes`, `idsize`, `idcolor1`, `idcolor2`, `quantity`) USING BTREE;
